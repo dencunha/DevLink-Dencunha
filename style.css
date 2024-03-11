@@ -1,6 +1,41 @@
 body {
-  background-image: url(./assets/dd1.jpg);
+ /* background-image: url(./assets/dd1.jpg);
   background-repeat: no-repeat;
-  background-position: top-center;
-  background-size: cover;
+  background-position: top center;
+  background-size: cover;*/ 
+
+  /*background: color image repeat position/size */ 
+  background: url(./assets/dd123.jpg) no-repeat top center/cover;
 }
+
+body * {
+  font-family: "Inter", sans-serif;
+  color: white;
+}
+
+#container {
+  height: 712px;
+  width: 100%;
+  max-width: 588px;
+  margin: 56px auto 0px;
+  padding: 0 24px;
+  border: 1px solid red;
+}
+
+#profile {
+  text-align: center;
+  padding: 24px;
+}
+
+#profile img {
+  display: block;
+  width: 112px;
+  margin: auto;
+}
+
+#profile p {
+  font-weight: 500;
+  line-height: 24px;
+  margin-top: 8px;
+}
+  
