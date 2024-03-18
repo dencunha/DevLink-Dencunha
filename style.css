@@ -92,12 +92,30 @@ body * {
 
 /*swuitch button*/
 
+#switch {
+  position: relative;
+  width: 64px;
+
+  margin: 4px auto;
+}
+
 #switch button {
   width: 32px;
   height: 32px;
   background: white var(--switch-bg-url) no-repeat center;
   border: 0;
   border-radius: 50%;
+
+  position: absolute;
+  z-index: 1;
+  transform: translateY(-50%);
+  top: 50%;
+  left: 0;
+}
+
+.light #switch button {
+  right: 0;
+  left: initial;
 }
 
 #switch span {
@@ -106,9 +124,9 @@ body * {
   height: 24px;
   background: var(--surface-color);
   border: 1px solid var(--stroke-color);
-   backdrop-filter: blur(4px);
-   -webkit-backdrop-filter: blur(4px);
-   border-radius: 9999px;
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  border-radius: 9999px;
 }
 
 /*links*/
